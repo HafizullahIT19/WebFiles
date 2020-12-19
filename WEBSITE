@@ -1,0 +1,110 @@
+
+
+
+--------------------------------------------------------------------------------------------
+
+Icons
+
+https://toplearn.com/c/pgL6
+
+Video 3: 
+
+  1- Material Design Iconic Font:
+            https://zavoloklom.github.io/material-design-iconic-font/index.html
+            
+            animate.style:
+                 https://animate.style/
+
+  2- Font Awesome:
+           https://fontawesome.com/start
+
+------------------------------------------------
+
+shortcut icon  and  document.body.scrollTop
+
+Video 10:
+
+html
+
+shortcut icon 
+
+<link rel="shortcut icon" href="images/pineapple.jpg">
+
+
+
+JS
+
+window.onscroll = function () {
+    fade();
+};
+
+function fade() {
+    var btn = document.querySelector(".btn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+}
+
+
+function move() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+--------------------------------------------------------------------------------------------
+
+BEM = Block Element Modifier
+
+Block__Element--Modifier
+
+https://toplearn.com/c/xGjr
+
+1- ClassName =  Block
+    Class= "header"
+    Class= "header-top"
+
+2- ClassName = Block__Element
+    Class= "header__title"
+
+3- ClassName = Block__Element--Modifier
+    class="form__submit form__submit--disabled"
+
+
+HTML
+<form class="form form--theme-xmas form--simple">
+  <input class="form__input" type="text" />
+  <input
+    class="form__submit form__submit--disabled"
+    type="submit" />
+</form>
+
+
+CSS
+.form { }                           Block
+.form--theme-xmas { }               --Modifier
+.form--simple { }                   --Modifier
+.form__input { }                    __Element
+.form__submit { }                   __Element
+.form__submit--disabled { }         --Modifier
+
+
+
+------------------------------------------------
+
+HTML
+if you want to write persian 
+    <html lang="fa" dir="rtl">
+
+
+CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+--------------------------------------------------------------------------------------------
